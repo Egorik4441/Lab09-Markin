@@ -1,37 +1,86 @@
-﻿// // // int totalExercises = 1;
+﻿// // // // // // // // int totalExercises = 1;
 
-// // // for(int number = 8; number >= totalExercises; number--)
+// // // // // // // // for(int number = 8; number >= totalExercises; number--)
+// // // // // // // // {
+// // // // // // // //     Console.WriteLine($"Упражнение {number}");
+// // // // // // // // }
+
+// // // // // // // // Console.WriteLine("Домашнее задание готово");
+
+// // // // // // // for (int room = 5; room <= 50; room += 5)
+// // // // // // // {
+// // // // // // //     Console.WriteLine($"Кабинет{room}");
+// // // // // // // }
+
+// // // // // // int totalWeeks = 3;
+
+// // // // // // for (int week = 1; week <= totalWeeks; week++)
+// // // // // // {
+// // // // // //     for (int day = 1; day <= 5; day++)
+// // // // // //     {
+// // // // // //         Console.WriteLine($"Неделя {week}, день {day}");
+// // // // // //     }
+// // // // // //     Console.WriteLine("^_^");
+// // // // // // }
+
+// // // // // int bilet = 0;
+// // // // // for (int ticket = 1; ticket <= 30; ticket++)
+// // // // // {
+// // // // //     if (ticket == 4 || ticket == 12 || ticket == 19)
+
+// // // // //     {
+// // // // //         bilet++;
+// // // // //         continue; // билет уже вытянут
+// // // // //     }
+// // // // //     Console.WriteLine($"Первый доступный билет: {ticket}, Было пропущено билетов: {bilet}");
+// // // // //     break;
+// // // // // }
+
+// // // // for (; ; )
+// // // // {
+// // // //     Console.Write("Введите код группы (для выхода - <выход>): ");
+// // // //     string groupCode = Console.ReadLine();
+
+// // // //     if (groupCode == "выход")
+// // // //     {
+// // // //         break;
+// // // //     }
+
+// // // //     Console.WriteLine($"Записан код группы: {groupCode}");
+
+// // // // }
+// // // // Console.WriteLine("Работа с журналом завершена");
+
+// // // int N = 34;
+
+// // // for (int count = 1; count <= N; count += 2)
 // // // {
-// // //     Console.WriteLine($"Упражнение {number}");
+// // //     Console.WriteLine($"Нечётные: {count}");
 // // // }
 
-// // // Console.WriteLine("Домашнее задание готово");
+// // for (int count = 100; count >= 0; count -= 10)
+// // Console.WriteLine(count);
 
-// // for (int room = 5; room <= 50; room += 5)
-// // {
-// //     Console.WriteLine($"Кабинет{room}");
-// // }
+// Console.Write("Введите свою фамилию: "); 
+// string surname = Console.ReadLine()!.Trim(); 
+// if (string.IsNullOrEmpty(surname)) { 
+// Console.WriteLine("Фамилия не введена. Завершение работы."); 
+// return; 
+// } 
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear); 
+// var assigned = Enumerable.Range(1, 10) 
+// .OrderBy(_ => rnd.Next()) 
+// .Take(2) 
+// .OrderBy(x => x) 
+// .ToList(); 
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}"); 
 
-// int totalWeeks = 3;
-
-// for (int week = 1; week <= totalWeeks; week++)
-// {
-//     for (int day = 1; day <= 5; day++)
-//     {
-//         Console.WriteLine($"Неделя {week}, день {day}");
-//     }
-//     Console.WriteLine("^_^");
-// }
-
-int bilet = 0;
-for (int ticket = 1; ticket <= 30; ticket++)
+int N = 15;
+int M = 3;
+for (int count = N; count >= 0; count -= M)
 {
-    if (ticket == 4 || ticket == 12 || ticket == 19)
-
-    {
-        bilet++;
-        continue; // билет уже вытянут
-    }
-    Console.WriteLine($"Первый доступный билет: {ticket}, Было пропущено билетов: {bilet}");
-    break;
+    Console.WriteLine(count);
 }
+
+// for (int count = 100; count > 0; count -= 2)
+//     Console.WriteLine(count);
