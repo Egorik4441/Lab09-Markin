@@ -12,16 +12,16 @@
 // // // // // // //     Console.WriteLine($"Кабинет{room}");
 // // // // // // // }
 
-// // // // // // int totalWeeks = 3;
+int totalWeeks = 3;
 
-// // // // // // for (int week = 1; week <= totalWeeks; week++)
-// // // // // // {
-// // // // // //     for (int day = 1; day <= 5; day++)
-// // // // // //     {
-// // // // // //         Console.WriteLine($"Неделя {week}, день {day}");
-// // // // // //     }
-// // // // // //     Console.WriteLine("^_^");
-// // // // // // }
+for (int week = 1; week <= totalWeeks; week++)
+{
+    for (int day = 1; day <= 5; day++)
+    {
+        Console.WriteLine($"Неделя {week}, день {day}");
+    }
+    Console.WriteLine("^_^");
+}
 
 // // // // // int bilet = 0;
 // // // // // for (int ticket = 1; ticket <= 30; ticket++)
@@ -85,5 +85,5 @@
 // Console.WriteLine(i);
 //     }
 
-for (int i = 100; i >= 2; i -= 2 )
-Console.WriteLine(i);
+// for (int i = 100; i >= 2; i -= 2 )
+// Console.WriteLine(i);
