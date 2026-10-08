@@ -75,12 +75,15 @@
 // .ToList(); 
 // Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}"); 
 
-int N = 15;
-int M = 3;
-for (int count = N; count >= 0; count -= M)
-{
-    Console.WriteLine(count);
-}
 
-// for (int count = 100; count > 0; count -= 2)
-//     Console.WriteLine(count);
+// int N = 20;
+
+// for (int i = 1; i <= N; i++)
+//     {
+//         if (i % 3 == 0)
+    
+// Console.WriteLine(i);
+//     }
+
+for (int i = 100; i >= 2; i -= 2 )
+Console.WriteLine(i);
